@@ -1,0 +1,70 @@
+:root {
+    /*I created variables for the colors of my page*/
+    --header: white;
+    --titles: black;
+    --background: maroon;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+    background-color: var(--background);
+  }
+
+  header {
+    font-size: 200%;
+    color: var(--header);
+    text-align: center;
+
+  }
+  
+  body {
+    min-height: 100%;
+    line-height: 1;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--background);
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    color: var(--titles);
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 100%;
+  }
+  
+  input,
+  select,
+  option,
+  optgroup,
+  textarea,
+  button,
+  pre,
+  code {
+    font-size: 100%;
+    font-family: inherit;
+  }
+  
+  ol,
+  ul {
+    list-style: none;
+  }
