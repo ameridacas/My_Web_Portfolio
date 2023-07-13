@@ -18,10 +18,11 @@
  /* Used the flex-box element for aligning the header and nav */ 
   header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 50px;
+    padding: 40px;
     background-color: var(--background);
+    
   }
   
   body {
@@ -33,13 +34,10 @@
   h1 {
     font-size: 200%;
     color: var(--header);
+    padding: 0 50px 0 0;
   }
   
   nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: right;
     color: var(--header);
     font-size: 20px;
   }
@@ -60,6 +58,15 @@
   /*used hover so when hovering over the ul it changes colors */
   nav a:hover {
     color: var(--titles);
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    background-color:black ;
+    font-size: 30px;
+    color: white;
+    padding: 40px;
   }
 
   h2,
@@ -87,7 +94,7 @@
     font-size: 100%;
     font-family: inherit;
   }
-  
+  /*Styled the img element using box-shadow,padding and background-image to make each category box*/
  img {
     flex-direction: row;
     height: 200px;
@@ -105,12 +112,30 @@
     list-style: none;
     
   }
+
+  footer {
+    display: flex;
+    justify-content: baseline;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  footer ul {
+  display: flex;
+  justify-content: space-evenly;    
+  }
+
+  footer ul li {
+    padding: 0 15px 0;
+  }
+
+  /*Media screen was used for different screen sizes*/
   @media screen and (min-width: 768px) {
 
   }
 
 @media screen and (max-width: 992px) {
     header {
-        width: 75%;
+        width: 100%;
       }
 }
