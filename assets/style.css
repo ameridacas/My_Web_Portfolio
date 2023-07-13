@@ -15,7 +15,7 @@
     height: 100%;
     background-color: var(--header);
   }
- /* Used the flex-box element for aligning the header and nav */ 
+ /* Used the display element for aligning the header and nav */ 
   header {
     display: flex;
     justify-content: flex-start;
@@ -30,7 +30,7 @@
     line-height: 1;
     font-family: sans-serif;
   }
-  
+  /* Added padding move h1 farther from the nav 50px to the left*/
   h1 {
     font-size: 200%;
     color: var(--header);
@@ -59,7 +59,7 @@
   nav a:hover {
     color: var(--titles);
   }
-  
+  /* Made a black Welcome Banner*/
   main {
     display: flex;
     justify-content: center;
@@ -69,6 +69,7 @@
     padding: 40px;
   }
 
+  
   h2,
   h3,
   h4,
@@ -119,7 +120,7 @@
     padding: 20px;
     font-size: 20px;
   }
-
+/* Seperated my info links with justify-content and padding*/
   footer ul {
   display: flex;
   justify-content: space-evenly;    
