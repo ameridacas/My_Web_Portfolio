@@ -67,13 +67,11 @@
     font-size: 30px;
     color: white;
     padding: 40px;
+    background-image: url(images/ufo.jpg);
   }
 
   
-  h2,
-  h3,
-  h4,
-  h5,
+  
   h6 {
     font-size: 100%;
   }
@@ -84,6 +82,8 @@
     padding-top: 5px var(--titles);
   }
 
+  
+  
   input,
   select,
   option,
@@ -95,17 +95,21 @@
     font-size: 100%;
     font-family: inherit;
   }
+
+  
   /*Styled the img element using box-shadow,padding and background-image to make each category box*/
  img {
     flex-direction: row;
-    height: 200px;
-    padding: 5px;
-    width: 200px;
+    height: 250px;
+    width: 500px;
     background-image: linear-gradient
         rgba(245, 35, 35, 0.942) 0%,
         rgba(245, 35, 35, 0.942) 100%;
     box-shadow: 0 4px 8px 0 rgba(245, 35, 35, 0.942), 0 6px 20px 0 black;
     text-align: center;
+    border: 4px solid red;
+    border-radius: 40px;
+    /* Made the images rounded with a red line with border and border-radius*/
     }
   
   ol,
@@ -119,6 +123,10 @@
     justify-content: baseline;
     padding: 20px;
     font-size: 20px;
+  }
+
+  h5:hover {
+    color: var(--titles);
   }
 /* Seperated my info links with justify-content and padding*/
   footer ul {
